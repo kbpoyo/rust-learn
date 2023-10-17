@@ -1,4 +1,11 @@
 mod entity;
+mod trait_obj;
+mod smptr_box;
+mod smptr_deref;
+mod smptr_drop;
+mod smptr_Rc_and_Arc;
+mod smptr_cell_and_refcell;
+
 use entity::Getter;
 
 
@@ -20,12 +27,6 @@ fn main() {
 
     let ani_a = entity::Animal::new("猪".to_string(), 32);
     println!("{:#?}", ani_a);
-
-    
-
-
-
-
 
 
 }

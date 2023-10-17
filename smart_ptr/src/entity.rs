@@ -69,3 +69,15 @@ pub struct NoOwnerShip {
     pub vir_part: i32,
 }
 
+
+#[test]
+fn test() {
+    let mut en = Entity{name: "hh".to_string(), age: 65, brif: "hello".to_string()};
+    
+    
+    //error: let ref_ = &en;
+    //ref_.name = "yhello".to_string();
+
+    let ref_ = &mut en;
+    ref_.name = "yehhj".to_string();
+}
